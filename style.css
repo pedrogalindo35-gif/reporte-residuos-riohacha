@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f2f6f3;
+  color: #222;
+}
+
+header {
+  background: #1f7a4d;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+.card {
+  background: white;
+  margin-bottom: 20px;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+h2 {
+  color: #1f7a4d;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 15px;
+  background: #1f7a4d;
+  color: white;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #155a38;
+}
+
+.resultado {
+  margin-top: 15px;
+  padding: 12px;
+  background: #e8f5ed;
+  border-left: 4px solid #1f7a4d;
+  border-radius: 5px;
+}
+
+.mensaje {
+  color: #1f7a4d;
+  font-weight: bold;
+}
+
+.reporte {
+  background: #f8f8f8;
+  border-left: 4px solid #1f7a4d;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+.reporte p {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ddd;
+  font-size: 14px;
+}

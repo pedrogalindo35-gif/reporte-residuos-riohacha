@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte de Residuos Riohacha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sistema Web de Reporte Ciudadano</h1>
+    <p>Gestión de residuos sólidos en Riohacha, La Guajira</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Inicio</h2>
+      <p>
+        Esta plataforma permite consultar horarios de recolección de residuos
+        y registrar reportes ciudadanos sobre acumulación de basura, retrasos
+        en la recolección o puntos críticos en la ciudad de Riohacha.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Consultar horario de recolección</h2>
+
+      <label for="barrioHorario">Seleccione el barrio:</label>
+      <select id="barrioHorario">
+        <option value="">Seleccione una opción</option>
+        <option value="Centro">Centro</option>
+        <option value="Coquivacoa">Coquivacoa</option>
+        <option value="Villa Fátima">Villa Fátima</option>
+        <option value="Los Almendros">Los Almendros</option>
+        <option value="Dividivi">Dividivi</option>
+      </select>
+
+      <button onclick="consultarHorario()">Consultar horario</button>
+
+      <div id="resultadoHorario" class="resultado"></div>
+    </section>
+
+    <section class="card">
+      <h2>Registrar reporte ciudadano</h2>
+
+      <form id="formReporte">
+
+        <label for="barrio">Barrio:</label>
+        <select id="barrio" required>
+          <option value="">Seleccione una opción</option>
+          <option value="Centro">Centro</option>
+          <option value="Coquivacoa">Coquivacoa</option>
+          <option value="Villa Fátima">Villa Fátima</option>
+          <option value="Los Almendros">Los Almendros</option>
+          <option value="Dividivi">Dividivi</option>
+        </select>
+
+        <label for="direccion">Dirección o punto de referencia:</label>
+        <input type="text" id="direccion" placeholder="Ejemplo: Calle 15 con Carrera 7" required>
+
+        <label for="tipo">Tipo de problema:</label>
+        <select id="tipo" required>
+          <option value="">Seleccione una opción</option>
+          <option value="Acumulación de residuos">Acumulación de residuos</option>
+          <option value="Retraso en recolección">Retraso en recolección</option>
+          <option value="Punto crítico de basura">Punto crítico de basura</option>
+          <option value="Malos olores">Malos olores</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <label for="descripcion">Descripción del problema:</label>
+        <textarea id="descripcion" rows="4" placeholder="Describa brevemente la situación" required></textarea>
+
+        <button type="submit">Guardar reporte</button>
+      </form>
+
+      <p id="mensaje" class="mensaje"></p>
+    </section>
+
+    <section class="card">
+      <h2>Reportes registrados</h2>
+      <div id="listaReportes"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Prototipo académico - Proyecto de grado 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
