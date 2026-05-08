@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Desarrollar un prototipo web funcional que permita consultar horarios de recolección de residuos sólidos y registrar reportes ciudadanos sobre problemáticas relacionadas con acumulación de basura, retrasos en la recolección y puntos críticos en la ciudad de Riohacha, La Guajira.
+Desarrollar un prototipo web funcional que permita consultar horarios de recolección de residuos sólidos y registrar reportes ciudadanos sobre problemáticas relacionadas con la acumulación de basura, retrasos en la recolección y puntos críticos en la ciudad de Riohacha, La Guajira.
 
 ## Problema que soluciona
 
